@@ -8,8 +8,8 @@
 
 import Foundation
 
-public enum State<Data> {
+public enum State<Data, E: Error> {
     case loading(Progress?)
     case loaded(Data?)
-    case error(Error)
+    case error(E)
 }
