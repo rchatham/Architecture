@@ -13,8 +13,8 @@
 		300388021EE55D3F00176E7B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300387FE1EE55D3F00176E7B /* ViewModel.swift */; };
 		300388031EE55D3F00176E7B /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300387FF1EE55D3F00176E7B /* ViewModelable.swift */; };
 		300388051EE55D3F00176E7B /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300388011EE55D3F00176E7B /* NetworkRouter.swift */; };
-		30E675E11EE56B740077ADA2 /* Architecture.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E675DF1EE56B740077ADA2 /* Architecture.h */; };
-		30E675E21EE56B740077ADA2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E675E01EE56B740077ADA2 /* Info.plist */; };
+		30E675E51EE64B760077ADA2 /* Architecture.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E675E31EE64B760077ADA2 /* Architecture.h */; };
+		30E675E61EE64B760077ADA2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E675E41EE64B760077ADA2 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,8 @@
 		300387FE1EE55D3F00176E7B /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		300387FF1EE55D3F00176E7B /* ViewModelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
 		300388011EE55D3F00176E7B /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
-		30E675DF1EE56B740077ADA2 /* Architecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Architecture.h; sourceTree = SOURCE_ROOT; };
-		30E675E01EE56B740077ADA2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		30E675E31EE64B760077ADA2 /* Architecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Architecture.h; sourceTree = "<group>"; };
+		30E675E41EE64B760077ADA2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 		300387FB1EE55C2000176E7B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				30E675DF1EE56B740077ADA2 /* Architecture.h */,
-				30E675E01EE56B740077ADA2 /* Info.plist */,
+				30E675E31EE64B760077ADA2 /* Architecture.h */,
+				30E675E41EE64B760077ADA2 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -114,7 +114,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30E675E11EE56B740077ADA2 /* Architecture.h in Headers */,
+				30E675E51EE64B760077ADA2 /* Architecture.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,7 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30E675E21EE56B740077ADA2 /* Info.plist in Resources */,
+				30E675E61EE64B760077ADA2 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
