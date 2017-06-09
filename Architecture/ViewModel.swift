@@ -8,11 +8,11 @@
 
 import Foundation
 
-public protocol ViewModel: class {
+public protocol ViewModel {
     associatedtype Data
     associatedtype E: Error
     var state: State<Data, E>? { get }
     
-    associatedtype Delegate: NetworkRouter
-    weak var delegate: Delegate? { get set }
+    associatedtype Network: NetworkRouter
+    weak var network: Network? { get set }
 }
