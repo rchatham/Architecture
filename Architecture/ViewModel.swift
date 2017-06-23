@@ -14,5 +14,11 @@ public protocol ViewModel {
     var state: State<Data, E>? { get }
     
     associatedtype Network: NetworkRouter
-    weak var network: Network? { get set }
+    weak var network: Network? { get }
+}
+
+extension ViewModel {
+    weak var network: Network? {
+        return Network.shared as? Self.Network
+    }
 }
