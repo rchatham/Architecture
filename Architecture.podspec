@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Architecture"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Protocol structures for your objects."
   s.description  = <<-DESC
     Basic implementations of some structural patterns for building ios apps.
