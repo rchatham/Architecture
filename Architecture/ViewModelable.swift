@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Describes an object that can be initialized with a ViewModel.
 public protocol ViewModelable {
     associatedtype T: ViewModel
     var viewModel: T { get }

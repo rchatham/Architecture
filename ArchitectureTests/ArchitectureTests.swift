@@ -2,7 +2,7 @@
 //  ArchitectureTests.swift
 //  ArchitectureTests
 //
-//  Created by Reid Chatham on 6/5/17.
+//  Created by Reid Chatham on 7/1/17.
 //  Copyright © 2017 Reid Chatham. All rights reserved.
 //
 
