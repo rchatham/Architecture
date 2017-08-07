@@ -9,11 +9,11 @@
 import Foundation
 
 /// Networking object which can be used to make data calls.
-public protocol NetworkRouter: class {
+public protocol Router: class {
     static var shared: Self { get }
 }
 
 /// A NetworkRouter that cannot be used to perform any functions.
-public final class NilRouter: NetworkRouter {
+public final class NilRouter: Router {
     public static let shared = NilRouter()
 }

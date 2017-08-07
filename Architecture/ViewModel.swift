@@ -9,7 +9,7 @@
 import Foundation
 
 /// The ViewModel maintains a view's state object as well as it's interface with it's network.
-public protocol ViewModel: Stateful, Networking {}
+public protocol ViewModel: Stateful, Routing {}
 
 /// Conforming to Stateful means you keep a state object.
 public protocol Stateful {
@@ -19,14 +19,14 @@ public protocol Stateful {
 }
 
 /// Conforming to Networking means you have access to a network router
-public protocol Networking {
-    associatedtype Network: NetworkRouter
-    weak var network: Network? { get }
+public protocol Routing {
+    associatedtype RouterType: Router
+    weak var router: RouterType? { get }
 }
 
-extension Networking {
-    public weak var network: Network? {
-        return Network.shared as Self.Network
+extension Routing {
+    public weak var router: RouterType? {
+        return RouterType.shared as Self.RouterType
     }
 }
 
@@ -38,12 +38,16 @@ public protocol NilStateViewModel: ViewModel {
     typealias Data = Void
 }
 
+extension NilStateViewModel {
+    var state: State<Void, NoError>? { return nil }
+}
+
 /// NilNetworkViewModel. 
 /// Initializes with no network, needs the state specified.
 public protocol NilNetworkViewModel: ViewModel {
-    typealias Network = NilRouter
+    typealias RouterType = NilRouter
 }
 
 extension NilNetworkViewModel {
-    weak var network: NilRouter? { return nil }
+    weak var router: NilRouter? { return nil }
 }
