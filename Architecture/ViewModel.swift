@@ -33,10 +33,7 @@ extension Routing {
 
 /// NilStateViewModel. 
 /// Initializes with no state for the ViewModel but needs a network specified.
-public protocol NilStateViewModel: ViewModel {
-    typealias E = NoError
-    typealias Data = Void
-}
+public protocol NilStateViewModel: ViewModel where E == NoError, Data == Void {}
 
 extension NilStateViewModel {
     var state: State<Void, NoError>? { return nil }
@@ -44,9 +41,7 @@ extension NilStateViewModel {
 
 /// NilNetworkViewModel. 
 /// Initializes with no network, needs the state specified.
-public protocol NilNetworkViewModel: ViewModel {
-    typealias RouterType = NilRouter
-}
+public protocol NilNetworkViewModel: ViewModel where RouterType == NilRouter {}
 
 extension NilNetworkViewModel {
     weak var router: NilRouter? { return nil }
