@@ -13,7 +13,7 @@
 		30999A8F1F0872B900903540 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30999A8D1F0872B900903540 /* ViewModel.swift */; };
 		30999A901F0872B900903540 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30999A8E1F0872B900903540 /* ViewModelable.swift */; };
 		30999A921F0872C200903540 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30999A911F0872C200903540 /* State.swift */; };
-		30999A941F0872D600903540 /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30999A931F0872D600903540 /* NetworkRouter.swift */; };
+		30999A941F0872D600903540 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30999A931F0872D600903540 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,7 @@
 		30999A8D1F0872B900903540 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		30999A8E1F0872B900903540 /* ViewModelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
 		30999A911F0872C200903540 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
-		30999A931F0872D600903540 /* NetworkRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		30999A931F0872D600903540 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		30999A741F08728A00903540 /* Architecture */ = {
 			isa = PBXGroup;
 			children = (
-				30999A931F0872D600903540 /* NetworkRouter.swift */,
+				30999A931F0872D600903540 /* Router.swift */,
 				30999A911F0872C200903540 /* State.swift */,
 				30999A8D1F0872B900903540 /* ViewModel.swift */,
 				30999A8E1F0872B900903540 /* ViewModelable.swift */,
@@ -221,7 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30999A901F0872B900903540 /* ViewModelable.swift in Sources */,
-				30999A941F0872D600903540 /* NetworkRouter.swift in Sources */,
+				30999A941F0872D600903540 /* Router.swift in Sources */,
 				30999A8F1F0872B900903540 /* ViewModel.swift in Sources */,
 				30999A921F0872C200903540 /* State.swift in Sources */,
 			);
